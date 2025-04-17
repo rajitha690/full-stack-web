@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react';
+// src/App.js
+import React from 'react';
 
 function App() {
-  const [msg, setMsg] = useState('');
-
-  useEffect(() => {
-    fetch('/api')
-      .then(res => res.json())
-      .then(data => setMsg(data.message));
-  }, []);
-
-  return <h1>{msg || 'Loading...'}</h1>;
+  return (
+    <div>
+      <h1>Hello from React!</h1>
+    </div>
+  );
 }
 
 export default App;
